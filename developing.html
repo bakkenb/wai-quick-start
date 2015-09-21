@@ -8,7 +8,7 @@
   </title>
   <meta name="viewport" content="width=device-width">
   <link href="http://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/main-460a1a3c.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-7a42b305.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
@@ -176,7 +176,7 @@
     </div>
 
   <div class="inner">
-      <p>These tips introduce some basic considerations to help you get started developing web content that is more accessible to people with disabilities. These tips are good practice; some are Web Content Accessibility Guidelines (WCAG) requirements. Follow the links to the related WCAG requirements, detailed background in the "Understanding" document, guidance from Tutorials, user stories, and more.. </p>
+      <p>This page introduces some basic considerations to help you get started developing web content that is more accessible to people with disabilities. These tips are good practice; some are Web Content Accessibility Guidelines (WCAG) requirements. Follow the links to the related WCAG requirements, detailed background in the "Understanding" document, guidance from Tutorials, user stories, and more.. </p>
 
 <h2 class="toc no_toc" id="on-this-page">On this page</h2>
 
@@ -408,7 +408,15 @@
 
 <h2 class="attach_permalink" id="help-users-avoid-and-correct-mistakes">Help users avoid and correct mistakes</h2>
 
-<p>Provide clear instructions, error messages, and notifications, to help users. When an error occurs, help users find where the problem is, make the message as specific as possible, and indicate how to fix the problem. Try to reduce the chances of errors occurring in the first place, for example, be as forgiving of format as possible when processing user input.</p>
+<p>Provide clear instructions, error messages, and notifications to help users complete forms on your site. When an error occurs:</p>
+
+<ul>
+  <li>Help users find where the problem is</li>
+  <li>Provide specific, understandable explanations</li>
+  <li>Suggest corrections</li>
+</ul>
+
+<p>Be as forgiving of format as possible when processing user input. For example, accept phone numbers that include spaces and delete the spaces as needed.</p>
 
 <aside class="example"><h3>Example: <span>Australian phone number field with forgiving validation</span></h3>
 
@@ -462,9 +470,9 @@
 
 <h2 class="attach_permalink" id="reflect-the-reading-order-in-the-code-order">Reflect the reading order in the code order</h2>
 
-<p>Ensure that the order of elements in the code matches the logical order of the information presented. One way to check this is to remove <abbr>CSS</abbr> styling and review that the order of the content makes sense.</p>
+<p>Ensure that the order of elements in the code matches the logical order of the information presented. One way to check this is to remove CSS styling and review that the order of the content makes sense.</p>
 
-<aside class="example"><h3>Example: <span>Two approaches to coding presentation of a product</span></h3>
+<aside class="example"><h3>Example: <span>Reflecting the logical reading order in the code</span></h3>
 
 <div class="order">
   <article class="product">
@@ -475,7 +483,7 @@
   </article>
   <div class="two-column">
     <figure>
-      <figcaption>✘ Code order does not reflect logical reading order</figcaption>
+      <figcaption>✘ Image before heading may be missed</figcaption>
       <div class="fail code">
         <p>Code Snippet:</p>
 <pre class="highlight html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trainer-cc785555.png"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
@@ -487,7 +495,7 @@
     </figure>
     
     <figure>
-      <figcaption>✓ Code order reflects logical reading order</figcaption>
+      <figcaption>✓ Heading marks the start of the section</figcaption>
       <div class="pass code">
         <p>Code Snippet:</p>
 <pre class="highlight html"><span class="nt">&lt;h3&gt;</span>Space trainers<span class="nt">&lt;/h3&gt;</span>
