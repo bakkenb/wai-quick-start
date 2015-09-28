@@ -8,7 +8,7 @@
   </title>
   <meta name="viewport" content="width=device-width">
   <link href="http://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/main-d5f04e3c.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-362bfa25.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
@@ -88,7 +88,7 @@
 	<symbol id="cross" viewbox="0 0 1792 1792">
 		<path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"/>
 	</symbol>
-  <symbol id="desktop" height="90%" width="90%" viewbox="0 0 1792 1792">
+  <symbol id="desktop" height="80%" width="80%" viewbox="0 0 1792 1792">
     <path d="M1728 992v-832q0-13-9.5-22.5t-22.5-9.5h-1600q-13 0-22.5 9.5t-9.5 22.5v832q0 13 9.5 22.5t22.5 9.5h1600q13 0 22.5-9.5t9.5-22.5zm128-832v1088q0 66-47 113t-113 47h-544q0 37 16 77.5t32 71 16 43.5q0 26-19 45t-45 19h-512q-26 0-45-19t-19-45q0-14 16-44t32-70 16-78h-544q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1600q66 0 113 47t47 113z"/>
   </symbol>
 </svg>
@@ -227,13 +227,13 @@
 
 <div class="contrast two-column">
   <figure>
-    <figcaption><svg class="cross"><use xlink:href="#cross"/></svg> Insufficient</figcaption>
+    <figcaption><span class="cross"><svg><use xlink:href="#cross"/></svg></span> Insufficient</figcaption>
     <div>
       <p class="fail">Some people cannot read text if there is not sufficient contrast between the text and background. For others, bright colors (high luminance) are not readable; they need low luminance.</p>
     </div>
   </figure>
   <figure>
-    <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Sufficient</figcaption>
+    <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Sufficient</figcaption>
     <div>
       <p class="pass">Some people cannot read text if there is not sufficient contrast between the text and background. For others, bright colors (high luminance) are not readable; they need low luminance.</p>
     </div>
@@ -280,7 +280,7 @@
 
 <div class="color-alone two-column">
   <figure class="reference fail">
-    <figcaption><svg class="cross"><use xlink:href="#cross"/></svg> Color only</figcaption>
+    <figcaption><span class="cross"><svg><use xlink:href="#cross"/></svg></span> Color only</figcaption>
     <div>
       <form action="#" method="post">
         <p class="instruction"><span class="required">Required fields are in red</span></p>
@@ -294,7 +294,7 @@
     </div>
   </figure>
   <figure class="reference pass">
-    <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Color and symbol</figcaption>
+    <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Color and symbol</figcaption>
     <div>
       <form action="#" method="post">
         <p class="instruction"><span class="required">Required fields</span> are in red and marked with an <span class="required">✻</span></p>
@@ -313,7 +313,7 @@
 <aside class="example"><h3>Example: <span>Refer to something using color alone</span></h3>
 <div class="color-alone two-column">
   <figure class="question fail">
-    <figcaption><svg class="cross"><use xlink:href="#cross"/></svg> Color only</figcaption>
+    <figcaption><span class="cross"><svg><use xlink:href="#cross"/></svg></span> Color only</figcaption>
     <div>
       <svg version="1.1" width="153" height="154" aria-labelledby="inaccessible-triangles-title" role="img">
         <g>
@@ -337,7 +337,7 @@
     </div>
   </figure>
   <figure class="question pass">
-    <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Color and number</figcaption>
+    <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Color and number</figcaption>
     <div>
       <svg version="1.1" width="153" height="154" aria-labelledby="accessible-triangles-title" role="img">
         <g>
@@ -397,7 +397,7 @@
 <div class="focus two-column">
   <div>
     <figure>
-      <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Style links to stand out from text</figcaption>
+      <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Style links to stand out from text</figcaption>
       <div>
         <p>Some people can't use a mouse and use only a <a href="javascript:return false;">keyboard to navigate</a> through web pages.</p>
         <p>It is important that users can reach all interactive elements using the keyboard, and that it is clear which element has focus.</p>
@@ -408,19 +408,19 @@
   </div>
   <div>
     <figure class="hover">
-      <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Mouse hover style</figcaption>
+      <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Mouse hover style</figcaption>
       <div>
         <p><a href="javascript:return false;">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
     </figure>
     <figure class="keyboard">
-      <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Keyboard focus style</figcaption>
+      <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Keyboard focus style</figcaption>
       <div>
         <p><a href="javascript:return false;">keyboard to navigate</a></p>
       </div>
     </figure>
     <figure class="active">
-      <figcaption><svg class="tick"><use xlink:href="#tick"/></svg> Touch or click style</figcaption>
+      <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Touch or click style</figcaption>
       <div>
         <p><a href="javascript:return false;">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
@@ -616,7 +616,7 @@
 
 <div class="headings two-column">
   <figure class="fail">
-    <figcaption id="inaccessible-headings-title"><svg class="cross"><use xlink:href="#cross"/></svg> Little spacing and unclear relationship</figcaption>
+    <figcaption id="inaccessible-headings-title"><span class="cross"><svg><use xlink:href="#cross"/></svg></span> Little spacing and unclear relationship</figcaption>
     <div>
       <svg version="1.1" height="173" aria-labelledby="inaccessible-headings-title" aria-describedby="inaccessible-headings-desc" role="img">
         <g>
@@ -653,7 +653,7 @@
     </div>
   </figure>
   <figure class="pass">
-    <figcaption id="accessible-headings-title"><svg class="tick"><use xlink:href="#tick"/></svg> More spacing and clearer relationship</figcaption>
+    <figcaption id="accessible-headings-title"><span class="tick"><svg><use xlink:href="#tick"/></svg></span> More spacing and clearer relationship</figcaption>
     <div>
       <svg version="1.1" height="173" aria-labelledby="accessible-headings-title" aria-describedby="accessible-headings-desc" role="img">
         <g>
@@ -911,7 +911,7 @@
 			<ul>
 				<li><strong>Status:</strong>
 	        [EDITOR’S DRAFT] updated
-  	      25 September 2015
+  	      28 September 2015
 	      (first published September 2015)
 				</li>
 	      <li>
