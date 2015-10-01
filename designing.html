@@ -8,7 +8,7 @@
   </title>
   <meta name="viewport" content="width=device-width">
   <link href="http://www.w3.org/WAI/wai-main.css" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/main-743d8b41.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main-4dd7980e.css" rel="stylesheet" type="text/css" />
 	<!--[if IE 7]><link href="http://www.w3.org/WAI/ie-old.css" rel="stylesheet" type="text/css" /><![endif]-->
   <script src="javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
 </head>
@@ -318,7 +318,7 @@
     <div>
       <svg version="1.1" width="153" height="154" aria-labelledby="inaccessible-triangles-title" role="img">
         <g>
-          <title id="inaccessible-triangles-title">Inaccessible triangle question</title>
+          <title id="inaccessible-triangles-title">Four triangles with different angles</title>
           <path d="m2.06902,49.92402l91.82715,-48.2264l-42.35869,75.85164l-49.46846,-27.62524z" class="green"/>
           <path d="m147.18413,95.39555l-41.64554,-80.62148l43.24728,27.76369l-1.60175,52.85779z" class="blue"/>
           <path d="m110.9136,148.01692l-27.57392,-82.3039l69.97661,50.70448l-42.40269,31.59943z" class="red"/>
@@ -340,17 +340,16 @@
   <figure class="question pass">
     <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Color and number</figcaption>
     <div>
-      <svg version="1.1" width="153" height="154" aria-labelledby="accessible-triangles-title" role="img">
+      <svg version="1.1" width="153" height="154">
         <g>
-          <title id="accessible-triangles-title">Accessible triangle question</title>
           <path d="m2.06902,49.92402l91.82715,-48.2264l-42.35869,75.85164l-49.46846,-27.62524z" class="green"/>
-          <text class="green" y="51" x="44"><tspan>1</tspan><tspan dx="100"> Green: Angles are 30°, 60°, 90°</tspan></text>
+          <text class="green" y="51" x="44"><tspan>1</tspan><tspan dx="100"> Green triangle: Angles are 30°, 60°, 90°</tspan></text>
           <path d="m147.18413,95.39555l-41.64554,-80.62148l43.24728,27.76369l-1.60175,52.85779z" class="blue"/>
-          <text class="blue" y="54" x="132"><tspan>2</tspan><tspan dx="100"> Blue: Angles are 30°, 30°, 120°</tspan></text>
+          <text class="blue" y="54" x="132"><tspan>2</tspan><tspan dx="100"> Blue triangle: Angles are 30°, 30°, 120°</tspan></text>
           <path d="m110.9136,148.01692l-27.57392,-82.3039l69.97661,50.70448l-42.40269,31.59943z" class="red"/>
-          <text class="red" y="114" x="110"><tspan>3</tspan><tspan dx="100"> Red: Angles are 30°, 60°, 90°</tspan></text>
+          <text class="red" y="114" x="110"><tspan>3</tspan><tspan dx="100"> Red triangle: Angles are 30°, 60°, 90°</tspan></text>
           <path d="m21.07534,112.17733l48.69831,-22.53485l-4.90304,52.17411l-43.79528,-29.63926z" class="yellow"/>
-          <text class="yellow" y="118" x="48"><tspan>4</tspan><tspan dx="100"> Yellow: Angles are 40°, 70°, 70°</tspan></text>
+          <text class="yellow" y="118" x="48"><tspan>4</tspan><tspan dx="100"> Yellow triangle: Angles are 40°, 70°, 70°</tspan></text>
         </g>
       </svg>
       <form action="#" method="post">
@@ -400,7 +399,7 @@
     <figure>
       <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Style links to stand out from text</figcaption>
       <div>
-        <p>Some people can't use a mouse and use only a <a href="javascript:return false;">keyboard to navigate</a> through web pages.</p>
+        <p>Some people can't use a mouse and use only a <a href="javascript:return false;" aria-label="Link is styled to stand out from main text">keyboard to navigate</a> through web pages.</p>
         <p>It is important that users can reach all interactive elements using the keyboard, and that it is clear which element has focus.</p>
         <p>Visible keyboard focus could be a border or highlight that moves as you tab through the web page.</p>
         <p></p>
@@ -411,19 +410,19 @@
     <figure class="hover">
       <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Mouse hover style</figcaption>
       <div>
-        <p><a href="javascript:return false;">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+        <p><a href="javascript:return false;" aria-label="Link is styled with a subtle background to highlight hover state">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
     </figure>
     <figure class="keyboard">
       <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Keyboard focus style</figcaption>
       <div>
-        <p><a href="javascript:return false;">keyboard to navigate</a></p>
+        <p><a href="javascript:return false;" aria-label="Link is styled with a stronger version of the hover style to make it stand out">keyboard to navigate</a></p>
       </div>
     </figure>
     <figure class="active">
       <figcaption><span class="tick"><svg><use xlink:href="#tick"/></svg></span> Touch or click style</figcaption>
       <div>
-        <p><a href="javascript:return false;">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
+        <p><a href="javascript:return false;" aria-label="Link is given a strong styling to show an action will occur">keyboard to navigate</a><img src="images/pointer-ca21d649.png" width="20" alt=""></p>
       </div>
     </figure>
   </div>
@@ -940,7 +939,7 @@ Developed with support from the <a href="http://www.w3.org/WAI/DEV/">WAI-DEV pro
     </div>
 	</footer>
 	<script src="javascripts/main-82ee7479.js" type="text/javascript"></script>
-  <script src="javascripts/permalink-57e9aea2.js" type="text/javascript"></script>
+  <script src="javascripts/permalink-323943e5.js" type="text/javascript"></script>
   <script src="javascripts/modal-a47671dc.js" type="text/javascript"></script>  
 </body>
 </html>
