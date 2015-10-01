@@ -710,7 +710,7 @@
     <figure class="rendered">
       <figcaption><span class="desktop"><svg><use xlink:href="#desktop"/></svg></span> Rendered</figcaption>
       <div class="rendered">
-        <div id="example-button" class="menu-button" role="button" tabindex="0"><svg class="icon"><use xlink:href="#bars"/></svg> Menu</div>
+        <div id="example-button" class="menu-button" role="button" aria-expanded="false" aria-controls="example-button-menu" tabindex="0"><svg class="icon"><use xlink:href="#bars"/></svg> Menu</div>
         <div id="example-button-menu" class="menu" aria-hidden="true" tabindex="-1">
           <ul>
             <li><a href="javascript:return false">About</a></li>
@@ -724,19 +724,19 @@
     <figure class="code">
       <figcaption><span class="info"><svg><use xlink:href="#developing"/></svg></span> Code</figcaption>
       <div>
-<pre class="highlight javascript">  <span class="kd">var</span> <span class="nx">buttonExample</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'example-button'</span><span class="p">);</span>
+<pre class="highlight javascript"><span class="kd">var</span> <span class="nx">buttonExample</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'example-button'</span><span class="p">);</span>
 
-  <span class="nx">buttonExample</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'keydown'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Toggle the menu when RETURN is pressed
-</span>    <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">==</span> <span class="mi">13</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'example-button-menu'</span><span class="p">));</span>
-    <span class="p">}</span>
-  <span class="p">});</span>
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'keydown'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Toggle the menu when RETURN is pressed
+</span>  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">==</span> <span class="mi">13</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'example-button-menu'</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">});</span>
 
-  <span class="nx">buttonExample</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Toggle the menu on mouse click
-</span>    <span class="nx">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'example-button-menu'</span><span class="p">));</span>
-  <span class="p">});</span>
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// Toggle the menu on mouse click
+</span>  <span class="nx">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'example-button-menu'</span><span class="p">));</span>
+<span class="p">});</span>
 </pre>
       </div>
     </figure>
@@ -855,7 +855,7 @@ Developed with support from the <a href="http://www.w3.org/WAI/DEV/">WAI-DEV pro
 			</div>
     </div>
 	</footer>
-	<script src="javascripts/main-adce54cb.js" type="text/javascript"></script>
+	<script src="javascripts/main-82ee7479.js" type="text/javascript"></script>
   <script src="javascripts/permalink-57e9aea2.js" type="text/javascript"></script>
   <script src="javascripts/modal-a47671dc.js" type="text/javascript"></script>  
 </body>
